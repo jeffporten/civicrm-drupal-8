@@ -27,8 +27,23 @@
   ],
   "require": {
     "composer/installers": "^1.0",
-    "jeffporten/civicrm-core" : ">=5.4.0"
+    "civicrm/civicrm-core" : ">=5.4.0"
   },
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jeffporten/civicrm-core"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+
   "extra": {
     "installer-name": "civicrm"
   }
